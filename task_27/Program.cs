@@ -21,11 +21,17 @@ for (i = 0; i < index; i++)
     l /= 10;
 }
 
+int SumNumb (int[]arr) // сумма чисел массива
+{
 int i2 = 0;
 int sum = 0;
 while (i2 <= i - 1)
 {
-    sum = sum + array[i2];
+    sum = sum + arr[i2];
     i2++;
 }
-Console.WriteLine($"Сумма цифр числа {x} = {sum}");
+return sum;
+}
+
+int Sum = SumNumb(array);
+Console.WriteLine($"Сумма цифр числа {x} = {Sum}");
